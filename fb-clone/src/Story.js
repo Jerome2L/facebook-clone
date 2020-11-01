@@ -4,7 +4,7 @@ import { Avatar } from '@material-ui/core';
 
 function Story({ image, profileSrc, title }) {
   return (
-    <div styles={{ backgroundImage: 'url({$image})'}} className="story">
+    <div style={{ backgroundImage: `url(${image})`}} className="story">
       <Avatar className="story_avatar" src={profileSrc} />
       <h4>{title}</h4>
     </div>
@@ -12,3 +12,5 @@ function Story({ image, profileSrc, title }) {
 }
 
 export default Story;
+
+//320
